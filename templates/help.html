@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Monoton&family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- mdbootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/mdbootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css" />
+    <title>Help</title>
+    
+      <!--font Awesome ... for button icon-->
+      <script src="https://kit.fontawesome.com/9973cec642.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand grow" href="#">Vehicle Monitoring System</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item grow">
+            <a class="nav-link" href="/index1">Home</a>
+          </li>
+          <li class="nav-item grow">
+            <a class="nav-link" href="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item grow">
+            <a class="nav-link" href="/help">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<main>
+  <section>
+    <div class="container row m-5" id="main-container">
+        <div class="image col-6">
+            <img src="{{ url_for('static', filename='images/community.png') }}" alt="img">
+        </div>
+
+        <div class="container  mt-2 col-6" id="form-container">
+
+            <h1 class="text-center">Confused??<h1> 
+              <h1><center>We are here to help you <i class="far fa-smile-beam"></i></h1>
+                <div class="row">
+                  <div class="col-3>">
+                  <ul class="mx-auto">
+                    <h3>Deblurring</h3>
+                    <li class="">Step-1: Register Object Detection services </li>
+                    <li class="">Step-2: Login with your details </li>
+                    <li class="">Step-3: Select for Deblurring</li>
+                    <li class="">Step-4: Upload the video or image</li>
+                    <li class="">Step-5: click "ENTER" to obtain the output</li>
+                    <li class="">Step-6: The enhanced video is obtained after Deblurring</li>
+                        
+                  </ul>
+                 </div>
+                  <div class="col-3>">
+                  <ul class="mx-auto">
+                    <h3>Speed Estimation</h3>
+                    <li class="">Step-1: Register Object Detection services </li>
+                    <li class="">Step-2: Login with your details </li>
+                    <li class="">Step-3: Select for Speed Estimation</li>
+                    <li class="">Step-4: Upload the video or image</li>
+                    <li class="">Step-5: click "ENTER" to obtain the output</li>
+                    <li class="">Step-6: The speed of the moving vehicles is obtained</li>
+                  </ul>
+                </div>
+                <div class="col-3>">
+                  <ul class="mx-auto">
+                    <h3>Object detection</h3>
+                    <li class="">Step-1: Register Object Detection services </li>
+                    <li class="">Step-2: Login with your details </li>
+                    <li class="">Step-3: Select for Object Detection</li>
+                    <li class="">Step-4: Upload the video or image</li>
+                    <li class="">Step-5: click "ENTER" to obtain the output</li>
+                    <li class="">Step-6: The moving vehicles in the video are found</li>
+                        
+                  </ul>
+                 </div>
+                </div>
+        </div>
+        
+    </div>
+</section>
+</main>
+
+
+<footer id="sticky-footer" class=" py-2 bg-dark">
+  <div class="brand">
+      <a class="navbar-brand" href="#">Object Detection</a>
+  </div>
+  <div class="copyright">
+      <small> <span>Designed by&copy;</span> <span>3435363739</span> <span>Terms of Use</span> and
+          <span>Privacy Policy</span></small>
+  </div>
+</footer>
+  
+  
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+  
+      <!-- mdbootstrap -->
+      <script
+        type="text/javascript"
+        src="node_modules/mdbootstrap/js/jquery.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="node_modules/mdbootstrap/js/popper.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="node_modules/mdbootstrap/js/bootstrap.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="node_modules/mdbootstrap/js/mdb.min.js"
+      ></script>
+    </body>
+  </html>
+  

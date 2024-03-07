@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Monoton&family=Montserrat:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- mdbootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/mdbootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css" />
+    <title>About Us</title>
+    
+      <!--font Awesome ... for button icon-->
+      <script src="https://kit.fontawesome.com/9973cec642.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand grow" href="#">Vehicle Monitoring System</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item grow">
+            <a class="nav-link" href="/index1">Home</a>
+          </li>
+          <li class="nav-item grow">
+            <a class="nav-link" href="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item grow">
+            <a class="nav-link" href="/help">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="text-center py-3">ABOUT US</h1>
+    <section class="discovery container section-1">
+      <div
+        class=" p-5
+          text
+          col-lg-6 col-md-6 col-12 w-50 d-flex flex-column align-items-center justify-content-center">
+        <h2 class="a" style="font-family: 'Courier New', Courier, monospace;"><b>MOVING OBJECT DETECTION </b></h2>
+
+        <p style="padding:5px" class="px-3">
+          We will all, at some point in our lives, fall. Every single one of us. 
+          We shouldn't spend our time trying to avoid falling. We should spend it finding someone who will help us up!
+        </p>
+        <!-- <p class="mb-5">
+          Or if you've lost something just chill! People here are damnnn cool!
+        </p> -->
+      </div>
+
+      <div class="img col-lg-6 col-md-6 col-12">
+        <img
+          src="{{ url_for('static', filename='images/cheering.jpg') }}"
+          alt="image"
+          class="img-fluid lost-found"
+        />
+      </div>
+    </section>
+
+    <section class="discovery-col-ak section-2">
+      <div class="container">
+        <div class="img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <img
+            src="{{ url_for('static', filename='images/what_we_do.jpeg') }}"
+            alt="image"
+            class="img-fluid border-top-20"
+            height="1000px"
+            width="500px"
+          />
+        </div>
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+          <centre><h3 class=" mb-3">
+            WHAT WE DO
+            <hr />
+          </h3></centre>
+
+          <p class="mb-5">
+           We provide our customers an experience of videos or image enhancement techniques. 
+           It is a computer vision technique that works to identify and locate objects within an image or video.Deblurring an image helps us to know money_format
+           about the image and enhance the quality of the image <br />
+          </p>
+          <div class="shrink d-inline-block">
+            <a class="learn-more px-5" href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+    <footer id="sticky-footer" class=" py-2 bg-dark">
+      <div class="brand">
+          <a class="navbar-brand" href="#">Object Detection</a>
+      </div>
+      <div class="copyright">
+          <small> <span>Designed by&copy;</span> <span>3435363739</span> <span>Terms of Use</span> and
+              <span>Privacy Policy</span></small>
+      </div>
+  </footer>
+  </html>
